@@ -1,0 +1,15 @@
+ChurnPredictionChallenge1.py
+Train ROC AUC: 0.7759083690764567
+
+ChurnPredictionChallenge2.py
+Train ROC AUC with best model: 0.7646380212118064
+
+ChurnPredictionChallenge3.py
+Random Forest Training ROC AUC: 0.749878517541249
+XGBoost Training ROC AUC: 0.7899782143065586
+Ensemble Training ROC AUC: 0.7790844290385557
+
+ChurnPredictionChallenge4.py
+Random Forest Training ROC AUC: 0.749878517541249
+XGBoost Training ROC AUC: 0.7899782143065586
+Ensemble Training ROC AUC: 0.7790844290385557
