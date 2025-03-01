@@ -66,31 +66,31 @@ After submission, your performance is evaluated by comparing your predicted prob
 
 The project contains four Python scripts, each representing a different approach to solving the churn prediction challenge:
 
-**ChurnPredictionChallenge1.py**
-Approach: Uses a basic XGBoost model with minimal feature engineering and no advanced hyperparameter tuning.
-Result: Train ROC AUC: 0.7759
-Advantages: Simplicity and ease of implementation.
+1. **ChurnPredictionChallenge1.py**
+    - Approach: Uses a basic XGBoost model with minimal feature engineering and no advanced hyperparameter tuning.
+    - Result: Train ROC AUC: 0.7759
+    - Advantages: Simplicity and ease of implementation.
 
-**ChurnPredictionChallenge2.py**
-Approach: Implements hyperparameter tuning using GridSearchCV to optimize an XGBoost model.
-Result: Train ROC AUC with best model: 0.7646
-Advantages: Systematic parameter optimization, though it may slightly lower the training ROC AUC due to tuning trade-offs.
+2. **ChurnPredictionChallenge2.py**
+    - Approach: Implements hyperparameter tuning using GridSearchCV to optimize an XGBoost model.
+    - Result: Train ROC AUC with best model: 0.7646
+    - Advantages: Systematic parameter optimization, though it may slightly lower the training ROC AUC due to tuning trade-offs.
 
-**ChurnPredictionChallenge3.py**
-Approach: Trains both RandomForest and XGBoost models, then ensembles them by averaging predictions.
-Results:
-    Random Forest Training ROC AUC: 0.7499
-    XGBoost Training ROC AUC: 0.7900
-    Ensemble Training ROC AUC: 0.7791
-Advantages: Demonstrates improved performance through ensembling.
+3. **ChurnPredictionChallenge3.py**
+    - Approach: Trains both RandomForest and XGBoost models, then ensembles them by averaging predictions.
+    - Results:
+        - Random Forest Training ROC AUC: 0.7499
+        - XGBoost Training ROC AUC: 0.7900
+        - Ensemble Training ROC AUC: 0.7791
+    - Advantages: Demonstrates improved performance through ensembling.
 
-**ChurnPredictionChallenge4.py**
-Approach: Similar to Challenge 3, this script also uses both RandomForest and XGBoost with an ensemble method.
-Results: Identical to Challenge 3:
-    Random Forest Training ROC AUC: 0.7499
-    XGBoost Training ROC AUC: 0.7900
-    Ensemble Training ROC AUC: 0.7791
-Advantages: Reinforces the ensemble approach and validates its consistency.
+4. **ChurnPredictionChallenge4.py**
+    - Approach: Similar to Challenge 3, this script also uses both RandomForest and XGBoost with an ensemble method.
+    - Results: Identical to Challenge 3:
+        - Random Forest Training ROC AUC: 0.7499
+        - XGBoost Training ROC AUC: 0.7900
+        - Ensemble Training ROC AUC: 0.7791
+    - Advantages: Reinforces the ensemble approach and validates its consistency.
 
 ## Packages and Dependencies
 
@@ -145,7 +145,7 @@ Virtual Environment Activation Issues:
 On Windows, if you receive execution policy errors when activating the virtual environment in PowerShell, use:
 ```bash
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
-    ```
+```
 
 Then activate using:
 ```bash
@@ -227,41 +227,41 @@ python -m pip install --upgrade pip setuptools wheel
 
 Das Projekt enthält vier Python-Skripte, die jeweils einen anderen Ansatz zur Lösung der Churn Prediction Challenge darstellen:
 
-**ChurnPredictionChallenge1.py**
-    Ansatz: Verwendet ein einfaches XGBoost-Modell mit minimalem Feature Engineering und ohne fortgeschrittenes Hyperparameter-Tuning.
-    Ergebnis: Train ROC AUC: 0.7759
-    Vorteile: Einfachheit und leichte Implementierung.
+1. **ChurnPredictionChallenge1.py**
+    - Ansatz: Verwendet ein einfaches XGBoost-Modell mit minimalem Feature Engineering und ohne fortgeschrittenes Hyperparameter-Tuning.
+    - Ergebnis: Train ROC AUC: 0.7759
+    - Vorteile: Einfachheit und leichte Implementierung.
 
-**ChurnPredictionChallenge2.py**
-    Ansatz: Implementiert Hyperparameter-Tuning mittels GridSearchCV zur Optimierung eines XGBoost-Modells.
-    Ergebnis: Train ROC AUC mit bestem Modell: 0.7646
-    Vorteile: Systematische Parameteroptimierung, obwohl dies zu einem leichten Abfall des Trainings-ROC AUC führen kann.
+2. **ChurnPredictionChallenge2.py**
+    - Ansatz: Implementiert Hyperparameter-Tuning mittels GridSearchCV zur Optimierung eines XGBoost-Modells.
+    - Ergebnis: Train ROC AUC mit bestem Modell: 0.7646
+    - Vorteile: Systematische Parameteroptimierung, obwohl dies zu einem leichten Abfall des Trainings-ROC AUC führen kann.
 
-**ChurnPredictionChallenge3.py**
-    Ansatz: Trainiert sowohl RandomForest- als auch XGBoost-Modelle und ensemblet diese durch Mittelung der Vorhersagen.
-    Ergebnisse:
-        Random Forest Training ROC AUC: 0.7499
-        XGBoost Training ROC AUC: 0.7900
-        Ensemble Training ROC AUC: 0.7791
-    Vorteile: Zeigt verbesserte Leistung durch Ensembling.
+3. **ChurnPredictionChallenge3.py**
+    - Ansatz: Trainiert sowohl RandomForest- als auch XGBoost-Modelle und ensemblet diese durch Mittelung der Vorhersagen.
+    - Ergebnisse:
+        - Random Forest Training ROC AUC: 0.7499
+        - XGBoost Training ROC AUC: 0.7900
+        - Ensemble Training ROC AUC: 0.7791
+    - Vorteile: Zeigt verbesserte Leistung durch Ensembling.
 
-**ChurnPredictionChallenge4.py**
-    Ansatz: Ähnlich wie Challenge 3, verwendet dieses Skript ebenfalls RandomForest und XGBoost mit einer Ensemble-Methode.
-    Ergebnisse: Identisch zu Challenge 3:
-        Random Forest Training ROC AUC: 0.7499
-        XGBoost Training ROC AUC: 0.7900
-        Ensemble Training ROC AUC: 0.7791
-    Vorteile: Bestätigt den Erfolg des Ensemble-Ansatzes und seine Konsistenz.
+4. **ChurnPredictionChallenge4.py**
+    - Ansatz: Ähnlich wie Challenge 3, verwendet dieses Skript ebenfalls RandomForest und XGBoost mit einer Ensemble-Methode.
+    - Ergebnisse: Identisch zu Challenge 3:
+        - Random Forest Training ROC AUC: 0.7499
+        - XGBoost Training ROC AUC: 0.7900
+        - Ensemble Training ROC AUC: 0.7791
+    - Vorteile: Bestätigt den Erfolg des Ensemble-Ansatzes und seine Konsistenz.
 
 ## Pakete und Abhängigkeiten
 
 Das Projekt basiert auf folgenden wichtigen Paketen:
 
-    - pandas und numpy: Für die Datenmanipulation und numerische Operationen.
-    - scikit-learn: Für Machine Learning, einschließlich Modelltraining, Bewertung (ROC AUC), Datenvorverarbeitung und Hyperparameter-Tuning.
-    - xgboost: Zum Training leistungsstarker Gradient-Boosting-Modelle.
-    - matplotlib und seaborn: Für Datenvisualisierung.
-    - joblib: Für Modelldefinition und parallele Verarbeitung (falls erforderlich).
+- pandas und numpy: Für die Datenmanipulation und numerische Operationen.
+- scikit-learn: Für Machine Learning, einschließlich Modelltraining, Bewertung (ROC AUC), Datenvorverarbeitung und Hyperparameter-Tuning.
+- xgboost: Zum Training leistungsstarker Gradient-Boosting-Modelle.
+- matplotlib und seaborn: Für Datenvisualisierung.
+- joblib: Für Modelldefinition und parallele Verarbeitung (falls erforderlich).
 
 Alle Abhängigkeiten sind in der Datei requirements.txt aufgeführt.
 
